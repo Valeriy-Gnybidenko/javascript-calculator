@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <main>
+      <div id="app">
+        <div class="container calculator">
+          <div class="calculator__wrapper">
+            <div class="calculator__screen">
+              <input class="calculator__screen-input" type="text" />
+            </div>
+            <div class="calculator__btns-wrapper">
+              <div class="grid calculator__main-list">
+                <button data-multiply class="btn calculator__operators">
+                  *
+                </button>
+                <button data-division class="btn calculator__operators">
+                  /
+                </button>
+                <button data-difference class="btn calculator__operators">
+                  -
+                </button>
+                <button data-summ class="btn calculator__operators">+</button>
+              </div>
+              <div class="grid calculator__number-list">
+                <button class="btn calculator__number-btn">1</button>
+                <button class="btn calculator__number-btn">2</button>
+                <button class="btn calculator__number-btn">3</button>
+                <button class="btn calculator__number-btn">4</button>
+                <button class="btn calculator__number-btn">5</button>
+                <button class="btn calculator__number-btn">6</button>
+                <button class="btn calculator__number-btn">7</button>
+                <button class="btn calculator__number-btn">8</button>
+                <button class="btn calculator__number-btn">9</button>
+                <button class="btn calculator__number-btn">.</button>
+                <button class="btn btn-exactly">=</button>
+                <button class="btn btn-remove">C</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
