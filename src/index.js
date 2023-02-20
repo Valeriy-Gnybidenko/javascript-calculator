@@ -7,7 +7,6 @@ const removeBtn = document.querySelector('.btn-remove');
 
 const onClick = (e) => {
   const onClickData = e.target.innerHTML.replace(/\s/g, '');
-
   input.value += onClickData;
 
   if (input.value === 'C') {
@@ -19,6 +18,10 @@ const onClick = (e) => {
 
     const result = eval(expression);
     input.value = result;
+
+    if (input.value === undefined || result === undefined) {
+      input.value = '';
+    }
   };
 
   equalBtn.addEventListener('click', equal);
